@@ -80,7 +80,7 @@ btnHold.addEventListener('click', function() {
     totalScores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent = totalScores[activePlayer];
     // 2. If total score > || == 100 --> active player won, if not - switch active player
-    if (totalScores[activePlayer] >= 100) {
+    if (totalScores[activePlayer] >= 10) {
       isPlaying = false;
       document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
       document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
